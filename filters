@@ -1,0 +1,27 @@
+# Add this to the "General" category if you want to
+# detect these phrases in the subject field, filename,
+# username, comment, etc. If not, put it in the
+# "Comment" category.
+
+# Keep /pol/ out of other boards
+/chud/i;exclude:pol;
+/ynbaw/i;exclude:pol;
+/you('ll| will) never be a woman/i;exclude:pol;
+/ha(d|ve|ving) sex/i;exclude:pol;
+/dilate/i;exclude:pol;
+/tra(ns|nny|nnies|nime)/i;exclude:pol;
+/co(pe|pium)/i;exclude:pol;
+
+# Filter shill and spambot posts
+/what's the best .* and why is it .*/i
+/.* on suicide watch/i
+/why aren't you using .*/i
+/we got too cocky .*(bros|sisters)/i
+/oh no no no/i
+/so this is the power of .*/i
+/the absolute state of .*/i
+/brave/i;boards:g
+
+
+# Filter forced memes
+/tou(ch|ching|ched) grass/i
