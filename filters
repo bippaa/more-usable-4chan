@@ -15,7 +15,7 @@
 # Filter shill and spambot posts
 /what's the best .* and why is it .*/i
 /.* on suicide watch/i
-/why aren't you using .*/i
+/why aren't you using .*/i;op:only;
 /we got too cocky .*(bros|sisters)/i
 /oh no no no/i
 /so this is the power of .*/i
