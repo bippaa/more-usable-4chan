@@ -29,4 +29,6 @@
 /meds(, |. | )now/i
 /take your meds/i
 /what('s| is) (his|her|their) endgame/i;op:only;
-/ha(d|ve|ving) sex/i;
+/ha(d|ve|ving) sex/i
+/seethe/i
+/sneed/i
