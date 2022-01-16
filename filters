@@ -5,7 +5,7 @@
 
 # Keep /pol/ out of other boards
 /chud/i;exclude:pol;
-/ynbaw/i;exclude:pol;
+/ywnbaw/i;exclude:pol;
 /you('ll| will) never be a woman/i;exclude:pol;
 /dilate/i;exclude:pol;
 /tra(ns|nny|nnies|nime)/i;exclude:pol;
