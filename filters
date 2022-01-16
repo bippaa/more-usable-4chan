@@ -7,7 +7,6 @@
 /chud/i;exclude:pol;
 /ynbaw/i;exclude:pol;
 /you('ll| will) never be a woman/i;exclude:pol;
-/ha(d|ve|ving) sex/i;exclude:pol;
 /dilate/i;exclude:pol;
 /tra(ns|nny|nnies|nime)/i;exclude:pol;
 /co(pe|pium)/i;exclude:pol;
@@ -21,7 +20,13 @@
 /so this is the power of .*/i
 /the absolute state of .*/i
 /brave/i;boards:g
+/for me it's .*/i;op:only
+/based on what? based on .*/i
 
 
-# Filter forced memes
+# Filter forced memes and low effort posts
 /tou(ch|ching|ched) grass/i
+/meds(, |. | )now/i
+/take your meds/i
+/what('s| is) (his|her|their) endgame/i;op:only;
+/ha(d|ve|ving) sex/i;
