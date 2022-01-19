@@ -4,11 +4,12 @@
 # "Comment" category.
 
 # Keep /pol/ out of other boards
-/chud/i;exclude:pol;
-/ywnbaw/i;exclude:pol;
-/you('ll| will) never be a woman/i;exclude:pol;
-/dilate/i;exclude:pol;
-/tra(ns|nny|nnies|nime)/i;exclude:pol;
+/chud/i;exclude:pol;stub:no;
+/ywnbaw/i;exclude:pol;stub:no;
+/you('ll| will) never .* a woman/i;exclude:pol;stub:no;
+/dilate/i;exclude:pol;stub:no;
+/tra(ns|nny|nnies|nime)/i;exclude:pol;stub:no;
+/join the .*%/i;exclude:pol;stub:no;
 
 # Filter shill and spambot posts
 /what('s| is) the best .* and why is it .*/i;boards:g;op:only;stub:no;
@@ -37,3 +38,9 @@
 /seethe/i;stub:no;
 /sneed/i;stub:no;
 /co(pe|pium)/i;stub:no;
+/incel/i;stub:no
+/freetard/i;boards:g;stub:no
+/pedo/i;stub:no
+
+# Filter allcaps threads
+/^[^a-z]*$/;op:only
