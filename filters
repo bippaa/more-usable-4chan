@@ -9,26 +9,31 @@
 /you('ll| will) never be a woman/i;exclude:pol;
 /dilate/i;exclude:pol;
 /tra(ns|nny|nnies|nime)/i;exclude:pol;
-/co(pe|pium)/i;exclude:pol;
 
 # Filter shill and spambot posts
-/what's the best .* and why is it .*/i
-/.* on suicide watch/i
-/why aren't you using .*/i;op:only;
-/we got too cocky .*(bros|sisters)/i
-/oh no no no/i
-/so this is the power of .*/i
-/the absolute state of .*/i
-/brave/i;boards:g
-/for me it's .*/i;op:only
-/based on what? based on .*/i
+/what('s| is) the best .* and why is it .*/i;boards:g;op:only;stub:no;
+/.* on suicide watch/i;boards:g;op:only;stub:no;
+/why aren't you (using|running) .*/i;boards:g;op:only;stub:no;
+/we got too cocky/i;boards:g;stub:no;
+/oh no no no/i;boards:g;op:only;stub:no;
+/so this is the power of .*/i;boards:g;op:only;stub:no;
+/the absolute state of .*/i;boards:g;op:only;stub:no;
+/brave/i;boards:g;stub:no;
+/for me it's .*/i;boards:g;op:only;stub:no;
+/based on what? based on .*/i;boards:g;stub:no;
 
+# Filter e-celebs
+/what('s| is) (his|her|their) endgame/i;op:only;stub:no;
+/(is|was) (he|she) right?/i;op:only;stub:no;
+/(connor|joey|gigguk|cdogva)/i;boards:vt;stub:no;
+/trash( |)taste/i;boards:a,jp,vt;stub:no;
+/(distrotube|luke smith|mental outlaw)/i;boards:g;stub:no;
 
 # Filter forced memes and low effort posts
-/tou(ch|ching|ched) grass/i
-/meds(, |. | )now/i
-/take your meds/i
-/what('s| is) (his|her|their) endgame/i;op:only;
-/ha(d|ve|ving) sex/i
-/seethe/i
-/sneed/i
+/tou(ch|ching|ched) grass/i;stub:no;
+/meds(, |. | )now/i;stub:no;
+/take (your|ur) meds/i;stub:no;
+/ha(d|ve|ving) sex/i;stub:no;
+/seethe/i;stub:no;
+/sneed/i;stub:no;
+/co(pe|pium)/i;stub:no;
