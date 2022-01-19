@@ -25,7 +25,7 @@
 # Filter e-celebs
 /what('s| is) (his|her|their) endgame/i;op:only;stub:no;
 /(is|was) (he|she) right?/i;op:only;stub:no;
-/(connor|joey|gigguk|cdogva)/i;boards:vt;stub:no;
+/(connor|joey|gigguk|cdawgva)/i;boards:vt;stub:no;
 /trash( |)taste/i;boards:a,jp,vt;stub:no;
 /(distrotube|luke smith|mental outlaw)/i;boards:g;stub:no;
 
