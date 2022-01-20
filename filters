@@ -44,3 +44,12 @@
 
 # Filter allcaps threads
 /^[^a-z]*$/;op:only
+
+# Filter brand war and flamewar threads
+/(jewgle|applel|itoddler|micro(shaft|penis)|intlel|ay+md|(ang|lagd)roid|furryfox|cnile|samshit)/i;boards:g;op:only;stub:no;
+/it('s| is) over\W+.* (is finished|won)/i;op:only;stub:no;
+/(nintoddler|snoy|xbone)/i;boards:v,vg,vr;op:only;stub:no;
+
+# Filter (some) soyjak threads
+/noo+(\s|\W+\s|^)(you|they|he|she|it) can't just/i;op:only;stub:no;
+
