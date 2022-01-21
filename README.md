@@ -10,10 +10,10 @@ https://github.com/bippaa/more-usable-4chan/blob/main/filters
 
 ## FAQ
 
-##### What is the point of this?
+#### What is the point of this?
 I feel most people on 4chan are incapable of not falling for bait, flamewars, forced memes and blatant shilling so I've created this list to help them have a better time on 4chan. 
 
-##### Why are you filtering so many things? Isn't it a bit too much?
+#### Why are you filtering so many things? Isn't it a bit too much?
 These are so many things that are posted every single day by people who think repeating the same thing over and over again like a broken record is funny. Also, some of it is blatant advertising/shilling and it baffles me that 4chan's staff does not delete it.
 
 #### My board index has significantly less threads after applying this filter.
