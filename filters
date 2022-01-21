@@ -46,9 +46,16 @@
 /^[^a-z]*$/;op:only
 
 # Filter brand war and flamewar threads
-/(jewgle|applel|itoddler|micro(shaft|penis)|intlel|ay+md|(ang|lagd)roid|furryfox|cnile|samshit)/i;boards:g;op:only;stub:no;
+/(jewgle|applel|itoddler|micro(shaft|penis|dick|shit)|intlel|ay+md|(ang|lagd)roid|furryfox|cnile|samshit)/i;boards:g;op:only;stub:no;
 /it('s| is) over\W+.* (is finished|won)/i;op:only;stub:no;
 /(nintoddler|snoy|xbone)/i;boards:v,vg,vr;op:only;stub:no;
+
+# Filter anti threads on /vt/
+/(zom|dead)braps/i;boards:vt;op:only;stub:no;
+/niggersanji/i;boards:vt;op:only;stub:no;
+/holobron(y|ies)/i;boards:vt;op:only;stub:no;
+/nijibron(y|ies)/i;boards:vt;op:only;stub:no;
+/>last stream .* days ago$/i;boards:vt;op:only;stub:no;
 
 # Filter (some) soyjak threads
 /noo+(\s|\W+\s|^)(you|they|he|she|it) can't just/i;op:only;stub:no;
