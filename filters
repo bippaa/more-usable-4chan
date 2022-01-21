@@ -57,6 +57,14 @@
 /nijibron(y|ies)/i;boards:vt;op:only;stub:no;
 />last stream .* days ago$/i;boards:vt;op:only;stub:no;
 
+# Filter slide/shill and race-baiting with no political substance threads on /pol/
+/are .* white.*$/i;boards:pol;op:only;
+/why do .* (women|girls) love .*/i;boards:pol;op:only;
+/rare flag/i;boards:pol;op:only;
+/would you date a/i;boards:pol;op:only;
+/why do non(\W|)white(s| people).*$/i;boards:pol;op:only;
+/drumpf.*$/i;boards:pol;op:only;
+
 # Filter (some) soyjak threads
 /noo+(\s|\W+\s|^)(you|they|he|she|it) can't just/i;op:only;stub:no;
 
