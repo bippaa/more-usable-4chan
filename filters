@@ -27,12 +27,13 @@
 /what('s| is) (his|her|their) endgame/i;op:only;stub:no;
 /(is|was) (he|she) right?/i;op:only;stub:no;
 /(connor|joey|gigguk|cdawgva)/i;boards:a,jp,vt;stub:no;
-/trash( |)taste/i;boards:a,jp,vt;stub:no;
+/trash(\s|)taste/i;boards:a,jp,vt;stub:no;
 /(distrotube|luke smith|mental outlaw)/i;boards:g;stub:no;
+/is he \Wour(\s|)guy\W/i;op:only;stub:no;
 
 # Filter forced memes and low effort posts
 /tou(ch|ching|ched) grass/i;stub:no;
-/meds(, |. | )now/i;stub:no;
+/meds(\W+\s|\s)now/i;stub:no;
 /take (your|ur) meds/i;stub:no;
 /ha(d|ve|ving) sex/i;stub:no;
 /seethe/i;stub:no;
@@ -40,14 +41,11 @@
 /co(pe|pium)/i;stub:no;
 /incel/i;stub:no
 /freetard/i;boards:g;stub:no
-/pedo/i;stub:no
-
-# Filter allcaps threads
-/^[^a-z]*$/;op:only
+/pedo/i;boards:a,c,e,g,h,jp,m,u,v,w,y,vg,vmg,vrpg,vr,vt,vp;stub:no
 
 # Filter brand war and flamewar threads
 /(jewgle|applel|itoddler|micro(shaft|penis|dick|shit)|intlel|ay+md|(ang|lagd)roid|furryfox|cnile|samshit)/i;boards:g;op:only;stub:no;
-/it('s| is) over\W+.* (is finished|won)/i;op:only;stub:no;
+/it('s|\sis) over\W+.* (is finished|won)/i;op:only;stub:no;
 /(nintoddler|snoy|xbone)/i;boards:v,vg,vr;op:only;stub:no;
 
 # Filter anti threads on /vt/
@@ -58,13 +56,31 @@
 />last stream .* days ago$/i;boards:vt;op:only;stub:no;
 
 # Filter slide/shill and race-baiting with no political substance threads on /pol/
-/are .* white.*$/i;boards:pol;op:only;
+/^are .* white.*$/i;boards:pol;op:only;
 /why do .* (women|girls) love .*/i;boards:pol;op:only;
 /rare flag/i;boards:pol;op:only;
 /would you date a/i;boards:pol;op:only;
 /why do non(\W|)white(s| people).*$/i;boards:pol;op:only;
 /drumpf.*$/i;boards:pol;op:only;
+/blacked/i;boards:pol;op:only;
+/built for the (bbc|bwc|.*(cock|dick))/i;boards:pol;op:only;
 
 # Filter (some) soyjak threads
 /noo+(\s|\W+\s|^)(you|they|he|she|it) can't just/i;op:only;stub:no;
 
+##### Miscellaneous (Optional) #####
+
+# Filter allcaps threads
+#/^[^a-z]*$/;op:only;stub:no
+
+# Filter all greentext threads (exceeding 5 lines)
+#/^>\w+\n>\w+\n>\w+\n>\w+\n>\w+\n/i;op:only;stub:no
+
+# Filter greentext threads that begin with ">be me"
+#/^>be me/i;op:only;stub:no
+
+# Filter posts that mass-quote others (exceeding 5 lines)
+#/^>>\d+\n>>\d+\n>>\d+\n>>\d+\n>>\d+\n/i;stub:no
+
+# Filter posts that mass-quote others with a verbose reply below each backlink (exceeding 5 posts quoted)
+#/^>>\d+\n.*\n>>\d+\n.*\n>>\d+\n.*\n>>\d+\n.*\n>>\d+\n.*\n/i;stub:no
