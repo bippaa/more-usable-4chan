@@ -69,6 +69,7 @@
 /noo+(\s|\W+\s|^)(you|they|he|she|it) can't just/i;op:only;stub:no;
 
 ##### Miscellaneous (Optional) #####
+#remove each "#" before every / to activate#
 
 # Filter allcaps threads
 #/^[^a-z]*$/;op:only;stub:no
